@@ -22,8 +22,6 @@ All the experiments are issued in the form of pretty self-explanatory jupyter no
 
 Note that we use `wandb` ([link](https://wandb.ai/site)) dashboard system when launching our experiments. The practitioners are expected to use `wandb` too. 
 
-### Toy 2D experiment (2D Gaussian to Swissroll and Gaussian to 8 Gaussians)
-
 - ```notebooks/Toy_experiments.ipynb``` - Toy experiments.
 - ```notebooks/High_dimensionsal_gaussians.ipynb``` - Experiments with high dimensional gaussians.
 - ```stats/compute_stats.ipynb``` - Precomputing stats for FID evalution for colored MNIST and Celeba (you need to run it before experiments with images).
