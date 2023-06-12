@@ -15,26 +15,25 @@ If you find this repository or the ideas presented in our paper useful, please c
 }
 ```
 
-## Experiments 
+## Repository structure
+The implementation is GPU-based with the multi-GPU support.
 
-Below, we give the instructions how to launch the experiments from our manuscript. Note that we use `wandb` ([link](https://wandb.ai/site)) dashboard system when launching our experiments. The practitioners are expected to use `wandb` too. 
+All the experiments are issued in the form of pretty self-explanatory jupyter notebooks (`notebooks/`). For convenience, the majority of the evaluation output is preserved. Auxilary source code is moved to `.py` modules (`src/`). 
+
+Note that we use `wandb` ([link](https://wandb.ai/site)) dashboard system when launching our experiments. The practitioners are expected to use `wandb` too. 
 
 ### Toy 2D experiment (2D Gaussian to Swissroll and Gaussian to 8 Gaussians)
 
-```notebooks/Toy_experiments.ipynb``` - Toy experiments.
+- ```notebooks/Toy_experiments.ipynb``` - Toy experiments.
+- ```notebooks/High_dimensionsal_gaussians.ipynb``` - Experiments with high dimensional gaussians.
+- ```stats/compute_stats.ipynb``` - Precomputing stats for FID evalution for colored MNIST and Celeba (you need to run it before experiments with images).
+- ```notebooks/Image_experiments.ipynb``` - Training ENOT for colored MNIST and Celeba.
+- ```notebooks/Discrete_OT.ipynb``` - Calculating discrete OT mappings.
+- ```notebooks/MNIST_plotting.ipynb``` - Plotting ENOT and discrete OT results for colored MNIST.
+- ```notebooks/Celeba_plotting.ipynb``` - Plotting ENOT results for Celeba.
 
-### High-dimensional Gaussians
+## Datasets
+- [Colored MNIST] Custom dataseted obtained by coloring each MNIST digith in a random color;
+- [CelebA faces](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) requires ```datasets/list_attr_celeba.ipynb```;
 
-```notebooks/High_dimensionsal_gaussians.ipynb``` - Experiments with high dimensional gaussians.
-
-###  CelebA unpaired debluring and ColoredMnist 2 to 3.
-
-```stats/compute_stats.ipynb``` - Precomputing stats for FID evalution for colored MNIST and Celeba (you need to run it before experiments with images).
-
-```notebooks/Image_experiments.ipynb``` - Training ENOT for colored MNIST and Celeba.
-
-```notebooks/Discrete_OT.ipynb``` - Calculating discrete OT mappings.
-
-```notebooks/MNIST_plotting.ipynb``` - Plotting ENOT and discrete OT results for colored MNIST.
-
-```notebooks/Celeba_plotting.ipynb``` - Plotting ENOT results for Celeba.
+The dataloaders can be created by ```load_dataset``` function from ```src/tools.py```. The latter four datasets get loaded directly to RAM.
