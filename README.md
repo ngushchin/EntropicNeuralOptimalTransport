@@ -33,7 +33,7 @@ Note that we use `wandb` ([link](https://wandb.ai/site)) dashboard system when l
 - ```notebooks/Celeba_plotting.ipynb``` - Plotting ENOT results for Celeba.
 
 ## Datasets
-- [Colored MNIST] Custom dataseted obtained by coloring each MNIST digith in a random color;
+- Colored MNIST. Custom dataseted obtained by coloring each MNIST digith in a random color;
 - [CelebA faces](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) requires ```datasets/list_attr_celeba.ipynb```;
 
 The dataloaders can be created by ```load_dataset``` function from ```src/tools.py```. The latter four datasets get loaded directly to RAM.
