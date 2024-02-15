@@ -7,11 +7,13 @@ This repository contains code to reproduce the experiments from our work [https:
 If you find this repository or the ideas presented in our paper useful, please consider citing our paper.
 
 ```
-@article{gushchin2022entropic,
-  title={Entropic Neural Optimal Transport via Diffusion Processes},
-  author={Gushchin, Nikita and Kolesov, Alexander and Korotin, Alexander and Vetrov, Dmitry and Burnaev, Evgeny},
-  journal={arXiv preprint arXiv:2211.01156},
-  year={2022}
+@inproceedings{
+gushchin2023entropic,
+title={Entropic Neural Optimal Transport via Diffusion Processes},
+author={Nikita Gushchin and Alexander Kolesov and Alexander Korotin and Dmitry P. Vetrov and Evgeny Burnaev},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=fHyLsfMDIs}
 }
 ```
 
