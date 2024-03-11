@@ -1,6 +1,8 @@
 # Entropic Neural Optimal Transport via Diffusion Processes
 
-This repository contains code to reproduce the experiments from our work [https://arxiv.org/abs/2211.01156](https://arxiv.org/abs/2211.01156). PyTorch implementation.
+This is the official Python implementation of the NeurIPS 2023 paper [*Entropic Neural Optimal Transport via Diffusion Processes*](https://papers.nips.cc/paper_files/paper/2023/hash/eeac51414a11484d048432f614d5bb1b-Abstract-Conference.html) by [Nikita Gushchin](https://scholar.google.com/citations?user=UaRTbNoAAAAJ), [Alexander Kolesov](https://scholar.google.com/citations?user=WyAI_wUAAAAJ), [Alexander Korotin](https://scholar.google.com/citations?user=1rIIvjAAAAAJ), [Dmitry Vetrov](https://scholar.google.com/citations?user=7HU0UoUAAAAJ) and [Evgeny Burnaev](https://scholar.google.com/citations?user=pCRdcOwAAAAJ).
+
+<p align="center"><img src="schrodinger_bridge.png" width="400" /></p>
 
 ## Citation
 
